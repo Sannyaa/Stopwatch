@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a2935;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    height: 300px;
+    width: 100%;
+}
+
+#display {
+    width: 100%;
+    font-size: 15em;
+    margin: auto;
+    color: #a2cada;
+}
+
+button {
+    font-family: 'Nunito';
+    display: inline-block;
+    color: #ffffff;
+    margin: 20px 100px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    background: transparent;
+    border-color: #a2cada;
+    color: #a2cada;
+    border-radius: 5px;
+    font-size: 30px;
+    transition-duration: 0.2s;
+}
+
+#start-stop:hover {
+    background-color: #a2cada;
+    color: #0a2935;
+}
+
+#reset:hover {
+    background-color: #a2cada;
+    color: #0a2935;
+}
+
+
+/*Media Query Breakpoints*/
+
+@media (max-width: 1028px) {
+    #display {
+        font-size: 100px;
+    }
+    button {
+        margin: 30px;
+        font-size: 20px;
+    }
+}
